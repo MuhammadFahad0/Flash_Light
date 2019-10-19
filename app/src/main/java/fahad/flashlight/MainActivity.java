@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-            if(witch == true)
+            if(witch)
             {
                 imageView.setImageResource(R.drawable.on);
                 witch = false;
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(Build.VERSION.SDK_INT<Build.VERSION_CODES.M)
         {
-            if(witch == true)
+            if(witch)
             {
                 imageView.setImageResource(R.drawable.on);
                 witch = false;
