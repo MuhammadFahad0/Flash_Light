@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             if(witch == true)
             {
                 imageView.setImageResource(R.drawable.on);
-                Switch = false;
+                witch = false;
                 if (cameraManager != null) {
                     try
                     {
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 imageView.setImageResource(R.drawable.off);
-                Switch = true;
+                witch = true;
                 if (cameraManager != null) {
                     try {
                         cameraManager.setTorchMode(CameraID,false);
