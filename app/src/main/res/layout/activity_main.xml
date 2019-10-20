@@ -4,17 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="press"
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/off" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:onClick="press"
+            app:srcCompat="@drawable/off" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="84dp"
+            android:includeFontPadding="false"
+            android:onClick="activityChanger"
+            android:text="Button" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

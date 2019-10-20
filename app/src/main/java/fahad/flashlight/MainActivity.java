@@ -3,6 +3,7 @@ package fahad.flashlight;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraManager;
 import android.os.Build;
@@ -95,4 +96,17 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void activityChanger (View view)
+    {
+        Intent i = new Intent(getApplicationContext(),screenLight.class);
+        startActivity(i);
+        finish();
+
+    }
+
+
+
+
+
 }
